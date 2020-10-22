@@ -13,6 +13,9 @@ package main;
 import java.util.Scanner;
 public class POO_PRF {
 	public static void main(String[] args) {
+		// Declaracion de variables
+		int v1=0;
+		int v2=0;
 		
 		
 	}
