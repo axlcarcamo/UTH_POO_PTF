@@ -38,6 +38,7 @@ public class POO_PRF {
     
     int op1=0; // Gestion de opciones principal
     int op2=0; // Registro de candidatos
+    char S,s,N,n; // Consulta si desea continuar con el registro de votantes.
     
     /* Datos tipo String (Cadena de Texto).
     String nombre="";     // Debe ir el nombre completo en el ingreso de datos.
@@ -55,6 +56,7 @@ public class POO_PRF {
     String [] direcciones = new String [4];
     String [] nombresV = new String [10];
     String [] direccionesV = new String[10];
+    int    [] nID = new int[10];
     
   
    /* Banner correspondiente a la univerisidad */
@@ -149,7 +151,7 @@ public class POO_PRF {
 					  System.out.println(" Esperamos cuente con la informacion necesaria en posteriorme te en caso de ser asi enviarla");
 					  System.out.println(" a la siguiente direciom de correo: carcamo@me.com con el fin de validarla                  ");
 					  System.out.println(" ===========================================================================================");
-					  System.out.println("                  UNIVERSIDAD TECNOLOGICA DE HONDURAS GRUPO F LUN-JUE 19:20                 ");
+					  System.out.println("                 UNIVERSIDAD TECNOLOGICA DE HONDURAS GRUPO F LUN-JUE 19:20                 ");
 					  System.out.println(" ===========================================================================================");
 					  break;
 					  
@@ -165,9 +167,121 @@ public class POO_PRF {
 			  break;
 		  case 2: 
 			  System.out.println(" ===========================================================================================");
-			  System.out.println("");
+			  System.out.println(" Votante numero 01");
 			  System.out.println(" Bienvenido al registro de voto como ciudadano");
-			  System.out.println(" Ingrese su nombre: "); 
+			  System.out.print("   Ingrese el nombre completo segun este aparesca en su identificacion: "); nombresV[0] = tD.nextLine();
+			  System.out.print("   Ingrese la direccion exacta de su casa o lugar donde recide: "); direccionesV[0] =tD.nextLine();
+			  System.out.print("   Ingrese su numero de identidad: "); nID[0] = tD.nextInt();
+			  System.out.println("                   Su nombres es: " + nombresV[0] );
+			  System.out.println("                 Su Direccion es: " + direccionesV[0]);
+			  System.out.println(" Su numero de indentificacion es: " + nID[0]);
+			  System.out.println(" ===========================================================================================");
+			  System.out.println("");
+			  System.out.println(" ===========================================================================================");
+			  System.out.println(" Votante numero 02");
+			  System.out.println(" Bienvenido al registro de voto como ciudadano");
+			  System.out.print("   Ingrese el nombre completo segun este aparesca en su identificacion: "); nombresV[1] = tD.nextLine();
+			  System.out.print("   Ingrese la direccion exacta de su casa o lugar donde recide: "); direccionesV[1] =tD.nextLine();
+			  System.out.print("   Ingrese su numero de identidad: "); nID[1] = tD.nextInt();
+			  System.out.println("                   Su nombres es: " + nombresV[1] );
+			  System.out.println("                 Su Direccion es: " + direccionesV[1]);
+			  System.out.println(" Su numero de indentificacion es: " + nID[1]);
+			  System.out.println(" ===========================================================================================");
+			  System.out.println("");
+			  System.out.println(" ===========================================================================================");
+			  System.out.println(" Votante numero 03");
+			  System.out.println(" Bienvenido al registro de voto como ciudadano");
+			  System.out.print("   Ingrese el nombre completo segun este aparesca en su identificacion: "); nombresV[2] = tD.nextLine();
+			  System.out.print("   Ingrese la direccion exacta de su casa o lugar donde recide: "); direccionesV[2] =tD.nextLine();
+			  System.out.print("   Ingrese su numero de identidad: "); nID[2] = tD.nextInt();
+			  System.out.println("                   Su nombres es: " + nombresV[2] );
+			  System.out.println("                 Su Direccion es: " + direccionesV[2]);
+			  System.out.println(" Su numero de indentificacion es: " + nID[2]);
+			  System.out.println(" ===========================================================================================");
+			  System.out.println("");
+			  do {
+			  System.out.print(" Desea continuar con el ingreso de votantes: (S|s  o  N|n "); op3 = tD.nextInt();
+			  } while (op3!=S && op3!=s && op3!=N && op3!=n);
+			  switch (op3){
+				  case 'S':
+					  System.out.println(" ===========================================================================================");
+					  System.out.println(" Votante numero 04");
+					  System.out.println(" Bienvenido al registro de voto como ciudadano");
+					  System.out.print("   Ingrese el nombre completo segun este aparesca en su identificacion: ");
+					  nombresV[2] = tD.nextLine();
+					  System.out.print("   Ingrese la direccion exacta de su casa o lugar donde recide: ");
+					  direccionesV[2] = tD.nextLine();
+					  System.out.print("   Ingrese su numero de identidad: ");
+					  nID[2] = tD.nextInt();
+					  System.out.println("                   Su nombres es: " + nombresV[3]);
+					  System.out.println("                 Su Direccion es: " + direccionesV[3]);
+					  System.out.println(" Su numero de indentificacion es: " + nID[3]);
+					  System.out.println(" ===========================================================================================");
+					  System.out.println("");
+					  System.out.println(" ===========================================================================================");
+					  System.out.println(" Votante numero 05");
+					  System.out.println(" Bienvenido al registro de voto como ciudadano");
+					  System.out.print("   Ingrese el nombre completo segun este aparesca en su identificacion: ");
+					  nombresV[2] = tD.nextLine();
+					  System.out.print("   Ingrese la direccion exacta de su casa o lugar donde recide: ");
+					  direccionesV[2] = tD.nextLine();
+					  System.out.print("   Ingrese su numero de identidad: ");
+					  nID[2] = tD.nextInt();
+					  System.out.println("                   Su nombres es: " + nombresV[6]);
+					  System.out.println("                 Su Direccion es: " + direccionesV[6]);
+					  System.out.println(" Su numero de indentificacion es: " + nID[6]);
+					  System.out.println(" ===========================================================================================");
+					  System.out.println("");
+					  break;
+				  case 's':
+					  System.out.println(" ===========================================================================================");
+					  System.out.println(" Votante numero 04");
+					  System.out.println(" Bienvenido al registro de voto como ciudadano");
+					  System.out.print("   Ingrese el nombre completo segun este aparesca en su identificacion: ");
+					  nombresV[2] = tD.nextLine();
+					  System.out.print("   Ingrese la direccion exacta de su casa o lugar donde recide: ");
+					  direccionesV[2] = tD.nextLine();
+					  System.out.print("   Ingrese su numero de identidad: ");
+					  nID[2] = tD.nextInt();
+					  System.out.println("                   Su nombres es: " + nombresV[4]);
+					  System.out.println("                 Su Direccion es: " + direccionesV[4]);
+					  System.out.println(" Su numero de indentificacion es: " + nID[4]);
+					  System.out.println(" ===========================================================================================");
+					  System.out.println("");
+					  System.out.println(" ===========================================================================================");
+					  System.out.println(" Votante numero 05");
+					  System.out.println(" Bienvenido al registro de voto como ciudadano");
+					  System.out.print("   Ingrese el nombre completo segun este aparesca en su identificacion: ");
+					  nombresV[2] = tD.nextLine();
+					  System.out.print("   Ingrese la direccion exacta de su casa o lugar donde recide: ");
+					  direccionesV[2] = tD.nextLine();
+					  System.out.print("   Ingrese su numero de identidad: ");
+					  nID[2] = tD.nextInt();
+					  System.out.println("                   Su nombres es: " + nombresV[5]);
+					  System.out.println("                 Su Direccion es: " + direccionesV[5]);
+					  System.out.println(" Su numero de indentificacion es: " + nID[5]);
+					  System.out.println(" ===========================================================================================");
+					  System.out.println("");
+					  break;
+				  case 'N':
+					  break;
+				  case 'n':
+					  break;
+				  default:
+					  System.out.println(" ===========================================================================================");
+					  System.out.println(" La opcion ingresada no existe por ello y por razones de seguridad el sistema cerrara esta  ");
+					  System.out.println(" sesion en caso de tener problemas con la gestion de opciones buscar el grupo F de la clase ");
+					  System.out.println(" Programacio Orientada a Objetos del Ing. Walter Suazo ellos le podrian ayudar.             ");
+					  System.out.println(" ===========================================================================================");
+					  System.out.println("                  UNIVERSIDAD TECNOLOGICA DE HONDURAS GRUPO F LUN-JUE 19:20                 ");
+					  System.out.println(" ===========================================================================================");
+					  break;
+			  }
+			  
+			  
+			  System.out.println(" ===========================================================================================");
+			  System.out.println("                  UNIVERSIDAD TECNOLOGICA DE HONDURAS GRUPO F LUN-JUE 19:20                 ");
+			  System.out.println(" ===========================================================================================");
 			  break;
 		  case 3: 
 			  System.out.println("");
@@ -194,8 +308,4 @@ public class POO_PRF {
 		
   } // llave cierra la metodo main
 }// llave cierra clase
-// Nomenclaturas
-// Nomenclaturas
-// Nomenclaturas
 
-// Nomenclaturas 4
