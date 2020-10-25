@@ -38,8 +38,8 @@ public class POO_PRF {
     
     int op1=0; // Gestion de opciones principal
     int op2=0; // Registro de candidatos
-    int op3-0; // Switch seleccion de contador de votos segun ciudad.
-    int v100=0, v101=0, v102=0, v103=0,v104=0, 105=0, v106=0, v107=0, v108=0, v109=0;
+    int op3=0; // Switch seleccion de contador de votos segun ciudad.
+    int v100=0, v101=0, v102=0, v103=0, v104=0, v105=0, v106=0, v107=0, v108=0, v109=0;
     int v10=0, v11=0, v12=0, v13=0, v14=0, v15=0, v16=0, v17=0, v18=0, v19=0; // Registro de votos Primer partido
     int vpn1=0;
     int v20=0, v21=0, v22=0, v23=0, v24=0, v25=0, v26=0, v27=0, v28=0, v29=0; // Registro de votos Segundo partido
@@ -59,14 +59,14 @@ public class POO_PRF {
     char S,s,N,n; // Consulta si desea continuar con el registro de votantes.
     
     // Arreglos tipo String ( Nombres, NombresV, Direcciones, DireccionesV).
-    String [] nombres  = new String [4]; // 0 P. Naturaleza Hondurena 1 P. Nuevo amanecer 2 P. Light Blues
-    String [] direcciones = new String [4];
-    String [] nombresV = new String [10];
-    String [] direccionesV = new String[10];
+    String [] nombres =new String[4]; // 0 P. Naturaleza Hondurena 1 P. Nuevo amanecer 2 P. Light Blues
+    String [] direcciones =new String[4];
+    String [] nombresV =new String[10];
+    String [] direccionesV =new String[10];
     String [] centrosV = new String[10];
-    int    [] nID = new int[10];
-    int [] cVT = new int[10];
-    int [] vt=new int[10];
+    int [] nID =new int[10];
+    int [] cVT =new int[10];
+    int [] vt =new int[10];
     
   
    /* Banner correspondiente a la univerisidad */
@@ -264,7 +264,7 @@ public class POO_PRF {
 			  System.out.println("");
 			  do {
 			  System.out.print(" Desea continuar con el ingreso de votantes: (S|s  o  N|n "); op3 = tD.nextInt();
-			  } while (op3!=S && op3!=s && op3!=N && op3!=n);
+			  } while(op3!=S && op3!=s && op3!=N && op3!=n);
 			  switch (op3){
 				  case 'S':
 					  System.out.println(" ===========================================================================================");
@@ -435,7 +435,7 @@ public class POO_PRF {
 			  System.out.println(" 04 Salir");
 			  System.out.println(" ===========================================================================================");
 			  System.out.print(" Su opcione es: "); op3 = tD.nextInt();
-			  }While (op3>4);
+			  } while(op3>4);
 			  switch (op3) {
 				  case 1:
 					 System.out.println(" ===========================================================================================");
