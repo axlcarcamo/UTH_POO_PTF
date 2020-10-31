@@ -33,6 +33,8 @@ public class POO_PRF {
 		
     // Declaracion de variables
     
+    // Re-Open
+    
     
     // Datos tipo entero
     
